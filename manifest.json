@@ -11,6 +11,11 @@
         "contextMenus"
     ],
     "homepage_url": "https://github.com/apotenza92/firefox-merge-windows",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "firefox-merge-windows@apotenza92.com"
+        }
+    },
     "background": {
         "scripts": [
             "merge.js"

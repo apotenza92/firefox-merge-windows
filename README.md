@@ -2,7 +2,7 @@
 
 # Merge Windows
 
-A simple Firefox extension that allows you to merge all open browser windows into a single window with one click.
+A simple Firefox extension that allows you to merge all open browser windows into a single window by clicking the plugin button or using the right click menu.
 
 ## ✨ Features
 
