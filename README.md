@@ -1,4 +1,4 @@
-![Merge Windows Icon](icon_small.svg)
+<img src="icon.svg" alt="Merge Windows Icon" width="64">
 
 # Merge Windows
 
