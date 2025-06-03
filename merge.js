@@ -3,6 +3,9 @@ class windowManager {
         browser.contextMenus.onClicked.addListener(() => {
             this.merge();
         });
+        browser.action.onClicked.addListener(() => {
+            this.merge();
+        });
         browser.windows.onFocusChanged.addListener(() => {
             this.calculateContextMenu();
         });
@@ -33,8 +36,7 @@ class windowManager {
     async merge() {
         const windowMap = new Map();
         const windows = await this.getCurrentWindows();
-        let biggestCount = 0;
-        let biggest = null;
+        const currentWindow = await browser.windows.getCurrent();
         let repin = [];
         const promises = windows.map(async function (windowObj) {
             const tabs = await browser.tabs.query({ windowId: windowObj.id });
@@ -44,18 +46,14 @@ class windowManager {
                 }
                 return tab.id;
             }));
-            if (tabs.length > biggestCount) {
-                biggest = windowObj;
-                biggestCount = tabs.length;
-            }
         });
         await Promise.all(promises);
         const repinTabs = await Promise.all(repin);
         windows.forEach((windowObj) => {
-            if (windowObj === biggest) {
+            if (windowObj.id === currentWindow.id) {
                 return;
             }
-            browser.tabs.move(windowMap.get(windowObj), { index: -1, windowId: biggest.id });
+            browser.tabs.move(windowMap.get(windowObj), { index: -1, windowId: currentWindow.id });
         });
         repinTabs.forEach((tab) => {
             browser.tabs.update(tab.id, { pinned: true });
