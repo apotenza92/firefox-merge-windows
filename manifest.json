@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Firefox Merge Windows",
+    "version": "1.0",
+    "description": "Merge windows",
+    "icons": {
+        "96": "merge.svg"
+    },
+    "permissions": [
+        "tabs",
+        "contextMenus"
+    ],
+    "homepage_url": "https://github.com/apotenza92/firefox-merge-windows",
+    "background": {
+        "scripts": [
+            "merge.js"
+        ]
+    }
+}
