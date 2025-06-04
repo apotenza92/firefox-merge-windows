@@ -134,11 +134,8 @@ class windowManager {
                 });
             }
 
-            // For 'ignore' behavior, we still need to close the source window even if it only had pinned tabs
-            // The window will close automatically when all its moveable tabs are moved
-            // If there are only pinned tabs left, we need to close it manually
-            if (pinnedBehavior === 'ignore' && tabIds.length === 0) {
-                // This window only had pinned tabs, close it
+            // For 'ignore' behavior, close all other windows after moving unpinned tabs
+            if (pinnedBehavior === 'ignore') {
                 browser.windows.remove(windowObj.id);
             }
         });
