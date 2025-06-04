@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Merge Windows",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Merge windows into the currently focussed window.",
     "icons": {
         "128": "icons/icon-light.svg"
