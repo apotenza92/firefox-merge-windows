@@ -2,7 +2,7 @@
 
 # Merge Windows
 
-A simple Firefox extension that allows you to merge all other browser windows into the current window by clicking the plugin button or using the right click menu. Includes preference for Zen compatibility.
+A simple Firefox extension that allows you to merge all other browser windows into the current window by clicking the plugin button or using the right click menu. Includes preference for [Zen Browser](https://zen-browser.app/) compatibility.
 
 ## Installation
 
@@ -15,7 +15,7 @@ A simple Firefox extension that allows you to merge all other browser windows in
 - **Context Menu Integration**: Right-click on any page to access the merge function if multiple windows exist.
 - **Incognito Support**: Handles regular and private browsing windows separately.
 - **Configurable Pinned Tab Handling**: Multiple options for how pinned tabs are handled during merging.
-  - **Zen**: Pinned handling option designed specifically for Zen browser users so there is no intereference with pinned tabs.
+  - **Zen**: Pinned handling option designed specifically for [Zen Browser](https://zen-browser.app/) users so there is no intereference with pinned tabs.
 
 ## Configuration
 
