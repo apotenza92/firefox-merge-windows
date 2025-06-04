@@ -2,14 +2,19 @@
     "manifest_version": 3,
     "name": "Merge Windows",
     "version": "1.0",
-    "description": "Merge Windows",
+    "description": "Merge windows into the currently focussed window.",
     "icons": {
-        "96": "icon.svg"
+        "128": "icons/icon-light.svg"
     },
     "permissions": [
         "tabs",
-        "contextMenus"
+        "contextMenus",
+        "storage",
+        "activeTab"
     ],
+    "options_ui": {
+        "page": "options.html"
+    },
     "homepage_url": "https://github.com/apotenza92/firefox-merge-windows",
     "browser_specific_settings": {
         "gecko": {
@@ -23,7 +28,13 @@
         "type": "module"
     },
     "action": {
-        "default_icon": "icon.svg",
+        "theme_icons": [
+            {
+                "light": "icons/icon-dark.svg",
+                "dark": "icons/icon-light.svg",
+                "size": 128
+            }
+        ],
         "default_title": "Merge Windows"
     }
 }
