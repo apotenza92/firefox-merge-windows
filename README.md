@@ -7,7 +7,7 @@ A simple Firefox extension that allows you to merge all other browser windows in
 ## Installation
 
 ### From Firefox Add-ons Store
-*Coming soon - the extension will be available on the official Firefox Add-ons store.*
+[Firefox Add-ons Store Link](https://addons.mozilla.org/en-US/firefox/addon/simple-merge-windows/)
 
 ## Features
 
